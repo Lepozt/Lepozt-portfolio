@@ -16,8 +16,9 @@
 
     .web-dev {
         margin:auto;
+        margin-bottom:5rem;
         background-color:#141414;
-        height:250px;
+        height:270px;
         width:200px;
         border-radius:5px;
         font-family:sans-serif;
