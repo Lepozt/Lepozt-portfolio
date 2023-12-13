@@ -1,0 +1,245 @@
+* {
+    margin:0;
+}
+
+body {
+    background: #1E1E1E;
+}
+
+@media  screen and (max-width:600px) {
+
+    .left-section p {
+        margin-left:-15px;
+    }
+
+    .right-section a {
+        padding-left:8px;
+    }
+
+    .intro-first-section {
+        margin-top:2rem;
+        margin-left:2rem;
+    }
+
+    .intro-first-section h1 {
+        font-size:29px;
+    }
+
+    .intro-first-section p {
+        font-size:14px;
+    }
+
+    .intro-second-section {
+        margin:5rem 0 0 40px;
+    }
+
+    .bottom-first-section {
+        margin-top:-17rem;
+        margin-left:2rem;
+    }
+
+    .bottom-first-section p {
+        font-size:12px;
+    }
+
+    .bottom-first-section a:hover {
+        font-size: 13px;
+    }
+
+    .bottom-second-section {
+        margin:16rem 0 0 40px;
+        display:flex;
+        flex-direction:row;
+        color:whitesmoke;
+        font-family:sans-serif;
+        font-size:12px;
+    }
+
+    .bottom-second-section p {
+        padding:3px;
+    }
+
+    .location {
+        height:20px; 
+    }
+
+    
+}
+
+@media  screen and (min-width:600px) {
+    
+    .intro {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+
+    .right-section a {
+        padding-left:15px;
+    }
+
+    .intro-first-section {
+        margin-top:10rem;
+        margin-left:8rem;
+    }
+
+    .intro-first-section h1 {
+        font-size:2.7em;
+    }
+
+    .intro-second-section {
+        margin-top:7rem;
+        margin-right:10%;
+    }
+
+    .bottom {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+    .bottom-first-section {
+        margin-top:1rem;
+        margin-left:8rem;
+    }
+
+    .bottom-first-section p {
+        font-size:15px;
+    }
+
+    .location {
+        height:20px; 
+    }
+
+    .bottom-second-section {
+        margin-top:2rem;
+        margin-right:10%;
+        display:flex;
+        color:whitesmoke;
+        font-family:sans-serif;
+    }
+
+    .bottom-second-section p {
+        padding:1px;
+    }
+
+}
+
+.header {
+    background-color:#1a1919;
+    padding:25px;
+    display:flex;
+    flex-direction:row;
+}
+
+.left-section {
+    color:whitesmoke;
+    font-family: monospace;
+    font-size:16px;
+    width:55px;
+    font-weight:bold;
+}
+
+.right-section {
+    justify-content:end;
+    display:flex;
+    flex:1;
+}
+
+.right-section a {
+    color:whitesmoke;
+    text-decoration: none;
+    font-size:14px;
+    font-family:arial;
+}
+
+.intro-first-section {
+    color:whitesmoke;
+    font-family:sans-serif;
+}
+
+.intro-second-section {
+    background-color:#D5D5D5;
+    height:200px;
+    width:195px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-style:groove;
+    position:relative;
+    overflow: hidden;
+    border-radius:42% 58% 62% 38% / 39% 25% 75% 61%;
+    filter: drop-shadow(0 0 0.35rem grey);
+}
+
+.intro-second-section::before {
+    content:'';
+    background-image:repeating-conic-gradient(
+        #54BDD7 30deg,
+        transparent 150deg
+    );
+    height:150%;
+    width:150%;
+    position:absolute;
+    animation:rotate 3s infinite linear;
+}
+
+.intro-second-section::after {
+    content:'';
+    background: #D5D5D5 url('Images/Lepozt.png');
+    background-size:130px;
+    background-repeat: no-repeat;
+    background-position:15px;
+    height:190px;
+    width:185px;
+    position: absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:42% 58% 62% 38% / 39% 25% 75% 61%;
+}
+
+@keyframes rotate {
+    0% {
+        transform:rotate(0deg);
+    }
+
+    100% {
+        transform:rotate(-360deg);
+    }
+}
+
+.profile {
+    height:178px;
+    margin-left:-18px;
+}
+
+.bottom-first-section p {
+    padding:3px;
+    font-family:arial;
+    color:whitesmoke;
+}
+
+.bottom-first-section button {
+    color:#1E1E1E;
+    background:linear-gradient(40deg,
+    #45FB8F,
+    #54BDD7);
+    padding:5px;
+    font-family:sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:1px;
+    border:1px solid black;
+    cursor:pointer;
+}
+
+.prf {
+    animation-name:pfr;
+}
+
+@keyframes prf {
+    from {
+        
+    }
+}

@@ -1,0 +1,155 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background: #1E1E1E;
+}
+
+@media screen and (max-width:800px) {
+
+    .box1 {
+        width:85%;
+        margin-top:2rem;
+    }
+
+    input,
+    select,
+    textarea {
+        width:250px;
+    }
+
+    select {
+        width:15.6rem;
+    }
+
+    button {
+        width:6rem;
+        padding:0.7rem;
+    }
+}
+
+@media screen and (min-width:800px) {
+
+    .box1 {
+        width:30%;
+        margin-top:2rem;
+    }
+
+    input,
+    select,
+    textarea {
+        width:330px;
+    }
+
+    select {
+        width:20.63rem;
+    }
+
+    button {
+        width:7rem;
+        padding:0.9rem;
+        margin-top:1.5rem;
+    }
+}
+
+header {
+    width: 100%;
+    padding:20px;
+    text-align:center;
+    font-family:sans-serif;
+    color:whitesmoke;
+    margin-top:1rem;
+}
+
+form {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.box {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.box1 {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid whitesmoke;
+    padding:3rem;
+}
+
+input,
+select,
+textarea {
+    padding:1rem;
+    border: 1px solid silver;
+    filter: drop-shadow(0 0 0.15rem grey);
+    animation:glow 1.5s ease infinite;
+    overflow: hidden;
+}
+
+@keyframes glow {
+
+    0% {
+        box-shadow:0 0 0.30rem grey;
+    }
+
+    50% {
+        box-shadow:0 0 0.10rem grey;
+    }
+
+    100% {
+        box-shadow:0 0 0.10rem grey;
+    }
+}
+
+button {
+    color:whitesmoke;
+    font-family:monospace;
+    background:linear-gradient(42deg,
+    #45FB8F,
+    #54BDD7);
+    filter: drop-shadow(0 0 0.10rem grey);
+    border:1px solid grey;
+    font-size:16px;
+}
+
+button:hover {
+    opacity:0.9;
+}
+
+button:active {
+    opacity:0.7;
+}
+
+textarea {
+    height:7rem;
+    resize:none;
+    overflow-y:auto;
+}
+
+input[type="text"]:focus {
+    outline:none;
+    border:3px solid #54BDD7;
+}
+
+input[type="email"]:focus {
+    outline:none;
+    border:3px solid #45FB8F;
+}
+
+select:focus {
+    outline:none;
+    border:3px solid #54BDD7;
+}
+
+textarea:focus {
+    outline:none;
+    border:3px solid #45FB8F;
+}
