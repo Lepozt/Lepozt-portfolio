@@ -73,6 +73,20 @@
         font-family:sans-serif;
         cursor:pointer;
         filter: drop-shadow(0 0 0.35rem black);
+        transition:all 1s;
+    }
+
+    .web-dev:hover {
+        height:315px;
+        width:265px;
+        transition:all 1s;
+        filter: drop-shadow(0 0 0.55rem black)
+    }
+
+    .web-dev-heading p:hover {
+        width:200px;
+        letter-spacing:1.5px;
+        transition:all 2s;
     }
 
     .web-dev-heading {
@@ -90,6 +104,7 @@
         margin-top:20px;
         width:180px;
         letter-spacing:1px;
+        transition:all 2s;
     }
 
 }
@@ -160,4 +175,8 @@ body {
 .skills h1 {
     color:whitesmoke;
     font-family:arial;
+}
+
+.web-dev:active {
+    opacity:0.7;
 }

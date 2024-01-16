@@ -1,5 +1,6 @@
 * {
     margin:0;
+    box-sizing:border-box;
 }
 
 body {
@@ -63,6 +64,17 @@ body {
         height:20px; 
     }
 
+    footer {
+        position:relative;
+        padding:30px;
+        margin-top:5rem;
+      }
+
+      .fa-brands {
+        margin:2px;
+      }
+
+
     
 }
 
@@ -122,6 +134,50 @@ body {
     .bottom-second-section p {
         padding:1px;
     }
+
+    footer {
+        position:fixed;
+        padding:60px;
+      }
+
+      .fa-brands {
+        margin:5px;
+      }
+
+      .fa-instagram {
+        font-size: 25px;
+        transition: all 1.5s;
+      }
+
+      .fa-facebook {
+        font-size: 25px;
+        transition: all 1.5s;
+      }
+
+      .fa-github {
+        font-size: 25px;
+        transition: all 1.5s;
+      }
+
+      .fa-instagram:hover {
+        transition: all 1.5s;
+        background-image: linear-gradient(28deg,
+         rgba(255,152,1,1) 0%,
+          rgba(252,1,114,1) 60%,
+           rgba(212,0,196,1) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+
+      .fa-facebook:hover {
+        transition: all 1.5s;
+        color:#316FF6;
+      }
+
+      .fa-github:hover {
+        transition: all 1.5s;
+      }
 
 }
 
@@ -234,12 +290,10 @@ body {
     cursor:pointer;
 }
 
-.prf {
-    animation-name:pfr;
-}
-
-@keyframes prf {
-    from {
-        
-    }
-}
+footer {
+    bottom: 0;
+    width:100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
