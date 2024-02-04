@@ -1,0 +1,315 @@
+* {
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    background: #1E1E1E;
+}
+
+header {
+    color:white;
+    font-family:arial;
+}
+
+.second-section {
+    display:flex;
+    flex:2;
+    text-align:center;
+    padding:20px;
+}
+
+.fa-angles-left {
+    zoom: 1.9; 
+    background-image: linear-gradient(28deg,
+         rgba(255,152,1,1) 0%,
+          rgba(252,1,114,1) 60%,
+           rgba(212,0,196,1) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+
+
+    .container {
+        width:90%;
+        display:flex;
+        flex-direction:column;
+        margin-left:2rem;
+        margin-bottom:2rem;
+    }
+    
+    .work-list {
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+    
+    .work {
+        width:90%;
+        border-radius:10px;
+        position:relative;
+        overflow:hidden;
+    }
+    
+    .work img {
+        width:100%;
+        border-radius: 10px;
+        display: block;
+    }
+    
+        .layer1 {
+            height:0;
+            width: 100%;
+            background:linear-gradient(rgb(0,0,0,0.6),
+            #45FB8F);
+            color:white;
+            font-family:sans-serif;
+            position:absolute;
+            left:0;
+            bottom:0;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            overflow: hidden;
+            transition: height 1s;
+        }
+    
+        .layer2 {
+            height:0;
+            width: 100%;
+            background:linear-gradient(rgb(0,0,0,0.6),
+            #54BDD7);
+            color:white;
+            font-family:sans-serif;
+            position:absolute;
+            left:0;
+            bottom:0;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            overflow: hidden;
+            transition: height 1s;
+        }
+    
+        .layer3 {
+            height:0;
+            width: 100%;
+            background:linear-gradient(rgb(0,0,0,0.6),
+            #45FB8F);
+            color:white;
+            font-family:sans-serif;
+            position:absolute;
+            left:0;
+            bottom:0;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            overflow: hidden;
+            transition: height 1s;
+        }
+    
+        .work:hover .layer1 {
+            height:100%;
+        }
+    
+        .work:hover .layer2 {
+            height:100%;
+        }
+    
+        .work:hover .layer3 {
+            height:100%;
+        }
+    
+        .layer1 h3 {
+            margin-bottom:40px;
+            font-family:monospace;
+            font-size:17px;
+        }
+    
+        .layer2 h3 {
+            margin-bottom:40px;
+            font-family:monospace;
+            font-size:17px;
+        }
+    
+        .layer3 h3 {
+            margin-bottom:40px;
+            font-family:monospace;
+            font-size:17px;
+        }
+
+        .layer1,
+        .layer2,
+        .layer3 p {
+            font-size:14px;
+        }
+    
+        .fa-solid {
+            background-color:silver;
+            padding:10px;
+            border-radius:50%;
+            margin:20px 0 0 0 ;
+        }
+
+        header {
+            display:flex;
+            flex-direction: row;
+            margin:20px;
+        }
+
+        .first-section {
+            margin-top:-33px;
+        }
+    
+        .second-section h1 {
+            zoom:1.0;
+        }
+
+}
+
+@media screen and (min-width:500px) {
+
+    .container {
+        width:90%;
+        display:flex;
+        flex-direction:row;
+        margin-left:5rem;
+        justify-content: flex-end;
+    }
+
+    .work-list {
+        display:flex;
+        gap:20px;
+    }
+
+    .work {
+        width:30%;
+        border-radius:10px;
+        position:relative;
+        overflow:hidden;
+    }
+
+    .work img {
+        width:100%;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .layer1 {
+        height:0;
+        width: 100%;
+        background:linear-gradient(rgb(0,0,0,0.6),
+        #45FB8F);
+        color:white;
+        font-family:sans-serif;
+        position:absolute;
+        left:0;
+        bottom:0;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition: height 1s;
+    }
+
+    .layer2 {
+        height:0;
+        width: 100%;
+        background:linear-gradient(rgb(0,0,0,0.6),
+        #54BDD7);
+        color:white;
+        font-family:sans-serif;
+        position:absolute;
+        left:0;
+        bottom:0;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition: height 1s;
+    }
+
+    .layer3 {
+        height:0;
+        width: 100%;
+        background:linear-gradient(rgb(0,0,0,0.6),
+        #45FB8F);
+        color:white;
+        font-family:sans-serif;
+        position:absolute;
+        left:0;
+        bottom:0;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition: height 1s;
+    }
+
+    .work:hover .layer1 {
+        height:100%;
+    }
+
+    .work:hover .layer2 {
+        height:100%;
+    }
+
+    .work:hover .layer3 {
+        height:100%;
+    }
+
+    .layer1 h3 {
+        margin-bottom:60px;
+        font-family:monospace;
+        font-size:19px;
+    }
+
+    .layer2 h3 {
+        margin-bottom:60px;
+        font-family:monospace;
+        font-size:19px;
+    }
+
+    .layer3 h3 {
+        margin-bottom:60px;
+        font-family:monospace;
+        font-size:19px;
+    }
+
+    .fa-solid {
+        background-color:silver;
+        padding:10px;
+        border-radius:50%;
+        margin:20px 0 0 0 ;
+    }
+
+    .first-section {
+        margin-top:-30px;
+    }
+
+    .second-section h1 {
+        zoom:1.5;
+        padding-left:10px;
+    }
+
+    header {
+        display:flex;
+        padding:50px;
+    }
+}

@@ -56,12 +56,13 @@ body {
 }
 
 header {
+    display:flex;
     width: 100%;
     padding:20px;
     text-align:center;
     font-family:sans-serif;
     color:whitesmoke;
-    margin-top:1rem;
+    margin: 1rem;
 }
 
 form {
@@ -152,4 +153,29 @@ select:focus {
 textarea:focus {
     outline:none;
     border:3px solid #45FB8F;
+}
+
+.first-section {
+    display:flex;
+    width:20px;
+    padding:25px;
+}
+
+.second-section {
+    display:flex;
+    flex:2;
+    text-align:center;
+    padding:20px;
+}
+
+.fa-angles-left {
+    zoom: 1.7; 
+    background-image: linear-gradient(28deg,
+         rgba(255,152,1,1) 0%,
+          rgba(252,1,114,1) 60%,
+           rgba(212,0,196,1) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        cursor: pointer;
 }
