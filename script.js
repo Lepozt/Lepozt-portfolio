@@ -17,3 +17,7 @@ function faceBook() {
 function gitHub() {
     window.location.href = "https://github.com/Lepozt" ;
 }
+
+function nextPage() {
+  window.location.href = "skills/skills.html" ;
+}

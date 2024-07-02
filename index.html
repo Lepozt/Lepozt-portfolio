@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="left-section">
             <p>Lepozt.</p>
         </div>
-        <div class="right-section">
+        <nav class="right-section">
             <a href="">Home</a>
-            <a href="aboutme/about.html">About</a>
+            <a href="#about">About</a>
+            <a href="#services">services</a>
             <a href="projects/projects.html">Projects</a>
-            <a href="contacts/contacts.html">Contact</a>
-        </div>
-    </div>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
     <main>
         <div class="intro">
             <div class="intro-first-section">
@@ -44,8 +46,99 @@
             </div>
         </div>
     </main>
+    </section>
+    <section class="about" id="about">
+      <div class="about">
+          <h1>About Me</h1>
+      </div>
+      <div class="about-first-section">
+        <div class="about-image">
+          <img class="profile-2" src="Images/Lepozt.png" alt="profile-picture" />
+        </div>
+        <div class="info">
+          <p class="info-heading"><b>Tshepo Lepoqo</b></p>
+          <p class="information">I'm passionate Frontend Web developer based in Bloemfontein,South Africa.Specializing in HTML,CSS & JS,i bring creativity ,precision and commitment to continuos learning.Let's collaborate and turn your ideas into engaging digital experience</p>
+      </div>
+    </div>
+    </section>
+    <section class="services" id="services">
+      <div class="skills">
+        <h1>Services</h1>
+    </div>
+    <div class="web-dev" onclick="nextPage()">
+        <div class="coding-image">
+            <img class="coding" src="Images/coding.png" alt="coding" />
+        </div>
+        <div class="web-dev-heading">
+            <h2>Web Development</h2>
+            <div class="web-dev-text">
+                <p>For me,it's important to know all sides of the web development process,but all i know is Frontend web dev,but i'll learn whatever technology help me build websites that improve lives.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="my_work">
+        <div class="mywork">
+          <h1> My Work</h1>
+        </div>
+      </div>
+      <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="images\rx7.jpg" alt="LFS-image" />
+                    <div class="layer1">
+                        <h3>Live For Speed</h3>
+                        <p>Game that's focused on providing a realistic racing experience,with an emohasis on multiplayer gameplay</p>
+                        <a href="https://lepozt.github.io/LFSHub/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\supra.jpg" alt="LFS-image" />
+                    <div class="layer2">
+                        <h3>Loading</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam doloribus nemo ea id delectus eveniet architecto deserunt consequatur iste optio!</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\audi.jpg" alt="LFS-image" />
+                    <div class="layer3">
+                        <h3>Loading</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam doloribus nemo ea id delectus eveniet architecto deserunt consequatur iste optio!</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-me">
+        <div class="contact-second-section">
+            <h1>Contact Me</h1>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box1">
+            <form action="https://formspree.io/f/xrgwnvla" method="POST">
+                <input type="text" name="Name" placeholder="Full-Name" required />
+                <input type="email" name="Email" placeholder="Email" required />
+                <select name="Continent">
+                    <option>Africa</option>
+                    <option>Antarctica</option>
+                    <option>Asia</option>
+                    <option>Australia</option>
+                    <option>Europe</option>
+                    <option>North America</option>
+                    <option>South America</option>
+                </select>
+                <textarea name="message" placeholder="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
     <footer>
-       <div>
+       <div class="footer-icons">
         <i class="fa-brands fa-instagram" onclick="instaGram()"></i>
         <i class="fa-brands fa-whatsapp" onclick="whatsApp()"></i>
         <i class="fa-brands fa-facebook" onclick="faceBook()"></i>

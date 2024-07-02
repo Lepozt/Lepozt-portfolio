@@ -5,6 +5,19 @@
 
 body {
     background: #1E1E1E;
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+section {
+  min-height:100vh;
+  padding:;
+}
+
+main {
+  flex:1 0 auto;
+  margin-left:1rem;
 }
 
 @media  screen and (max-width:600px) {
@@ -63,18 +76,251 @@ body {
     .location {
         height:20px; 
     }
+    
+    .information {
+        width:300px;
+        font-size:13px;
+    }
+    
+       .skills {
+        margin:2rem;
+    }
+
+    .web-dev {
+        margin:auto;
+        margin-bottom:5rem;
+        background-color:#141414;
+        height:270px;
+        width:200px;
+        border-radius:5px;
+        font-family:sans-serif;
+        filter: drop-shadow(0 0 0.35rem black);
+    }
+
+    .web-dev-heading {
+        text-align: center;
+        font-size:13px;
+        margin-bottom:50px;
+    }
+
+    .coding {
+        margin:7px 7px 2px 7px;
+        height:40px;
+    }
+
+    .web-dev-heading p {
+        color:white;
+        margin-top:20px;
+        width:150px;
+        letter-spacing:1px;
+    }
+  
+    .about-first-section {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    
+    .about-image {
+      background-color:#D5D5D5;
+      width:178px;
+      height:178px;
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      margin:2rem;
+      filter: drop-shadow(0 0 0.35rem grey);
+    }
+
+.profile-2 {
+  width:122px;
+}
+    
+    .fa-instagram {
+        background-image: linear-gradient(28deg,
+         rgba(255,152,1,1) 0%,
+          rgba(252,1,114,1) 60%,
+           rgba(212,0,196,1) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+      
+      .container {
+        width:90%;
+        display:flex;
+        flex-direction:column;
+        margin:1rem;
+        margin-bottom:2rem;
+    }
+    
+    .work-list {
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        justify-content:space-between;
+    }
+    
+    .work {
+        width:100%;
+        border-radius:10px;
+        position:relative;
+        overflow:hidden;
+    }
+    
+    .work img {
+        width:100%;
+        border-radius: 10px;
+        display: block;
+    }
+    
+        .layer1 {
+            height:0;
+            width: 100%;
+            background:linear-gradient(rgb(0,0,0,0.6),
+            #45FB8F);
+            color:white;
+            font-family:sans-serif;
+            position:absolute;
+            left:0;
+            bottom:0;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            overflow: hidden;
+            transition: height 1s;
+        }
+    
+        .layer2 {
+            height:0;
+            width: 100%;
+            background:linear-gradient(rgb(0,0,0,0.6),
+            #54BDD7);
+            color:white;
+            font-family:sans-serif;
+            position:absolute;
+            left:0;
+            bottom:0;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            overflow: hidden;
+            transition: height 1s;
+        }
+    
+        .layer3 {
+            height:0;
+            width: 100%;
+            background:linear-gradient(rgb(0,0,0,0.6),
+            #45FB8F);
+            color:white;
+            font-family:sans-serif;
+            position:absolute;
+            left:0;
+            bottom:0;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            overflow: hidden;
+            transition: height 1s;
+        }
+    
+        .work:hover .layer1 {
+            height:100%;
+        }
+    
+        .work:hover .layer2 {
+            height:100%;
+        }
+    
+        .work:hover .layer3 {
+            height:100%;
+        }
+    
+        .layer1 h3 {
+            margin-bottom:40px;
+            font-family:monospace;
+            font-size:17px;
+        }
+    
+        .layer2 h3 {
+            margin-bottom:40px;
+            font-family:monospace;
+            font-size:17px;
+        }
+    
+        .layer3 h3 {
+            margin-bottom:40px;
+            font-family:monospace;
+            font-size:17px;
+        }
+
+        .layer1,
+        .layer2,
+        .layer3 p {
+            font-size:14px;
+        }
+    
+        .fa-solid {
+            background-color:silver;
+            padding:10px;
+            border-radius:50%;
+            margin:20px 0 0 0 ;
+        }
+      
+      .box1 {
+        width:90%;
+        margin-top:2rem;
+        margin:auto;
+    }
+    
+    .box {
+      width:90%;
+      margin-left:1rem;
+    }
+
+    input,
+    select,
+    textarea {
+        width:100%;
+    }
+
+    select {
+        width:100%;
+    }
+
+    button {
+        width:6rem;
+        padding:0.7rem;
+    }
+
+      .fa-whatsapp {
+        color:green;
+      }
+
+      .fa-facebook {
+        color:#316FF6;
+      }
 
     footer {
         position:relative;
         padding:30px;
         margin-top:5rem;
       }
+      
+    .footer-icons {
+      font-size:25px;
+    }
 
       .fa-brands {
         margin:2px;
       }
-
-
     
 }
 
@@ -134,9 +380,232 @@ body {
     .bottom-second-section p {
         padding:1px;
     }
+    
+    .info-heading {
+        font-size:30px;
+    }
+
+    .information {
+        width:580px;
+        font-size:22px;
+    }
+
+    .skills {
+        margin:5rem 5rem 2rem 5rem;
+    }
+    
+    .about-first-section {
+      display:flex;
+      flex-direction:inline;
+      align-items: center;
+      margin: auto;
+      justify-content:center;
+    }
+    
+    .about-image {
+      background-color:#D5D5D5;
+      width:350px;
+      height:350px;
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      margin:1rem;
+      filter: drop-shadow(0 0 0.35rem grey);
+    }
+
+.profile-2 {
+  height:340px;
+}
+
+    .web-dev {
+        margin:auto;
+        background-color:#141414;
+        height:300px;
+        width:250px;
+        border-radius:5px;
+        font-family:sans-serif;
+        cursor:pointer;
+        filter: drop-shadow(0 0 0.35rem black);
+        transition:all 1s;
+    }
+
+    .web-dev:hover {
+        height:315px;
+        width:265px;
+        transition:all 1s;
+        filter: drop-shadow(0 0 0.55rem black)
+    }
+
+    .web-dev-heading p:hover {
+        width:200px;
+        letter-spacing:1.5px;
+        transition:all 2s;
+    }
+
+    .web-dev-heading {
+        text-align: center;
+        font-size:15px;
+    }
+
+    .coding {
+        margin:10px 20px 10px 20px;
+        height:42px;
+    }
+
+    .web-dev-heading p {
+        color:white;
+        margin-top:20px;
+        width:180px;
+        letter-spacing:1px;
+        transition:all 2s;
+    }
+    
+    .container {
+        width:90%;
+        display:flex;
+        flex-direction:inline;
+        margin-right:3rem;
+        margin-left:3rem;
+        justify-content:space-evenly;
+    }
+
+    .work-list {
+        display:flex;
+        gap:2rem;
+    }
+
+    .work {
+        width:30%;
+        border-radius:10px;
+        position:relative;
+        overflow:hidden;
+    }
+
+    .work img {
+        width:100%;
+        border-radius: 10px;
+        display:block;
+    }
+
+    .layer1 {
+        height:0;
+        width: 100%;
+        background:linear-gradient(rgb(0,0,0,0.6),
+        #45FB8F);
+        color:white;
+        font-family:sans-serif;
+        position:absolute;
+        left:0;
+        bottom:0;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition: height 1s;
+    }
+
+    .layer2 {
+        height:0;
+        width: 100%;
+        background:linear-gradient(rgb(0,0,0,0.6),
+        #54BDD7);
+        color:white;
+        font-family:sans-serif;
+        position:absolute;
+        left:0;
+        bottom:0;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition: height 1s;
+    }
+
+    .layer3 {
+        height:0;
+        width: 100%;
+        background:linear-gradient(rgb(0,0,0,0.6),
+        #45FB8F);
+        color:white;
+        font-family:sans-serif;
+        position:absolute;
+        left:0;
+        bottom:0;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition: height 1s;
+    }
+
+    .work:hover .layer1 {
+        height:100%;
+    }
+
+    .work:hover .layer2 {
+        height:100%;
+    }
+
+    .work:hover .layer3 {
+        height:100%;
+    }
+
+    .layer1 h3 {
+        margin-bottom:60px;
+        font-family:monospace;
+        font-size:19px;
+    }
+
+    .layer2 h3 {
+        margin-bottom:60px;
+        font-family:monospace;
+        font-size:19px;
+    }
+
+    .layer3 h3 {
+        margin-bottom:60px;
+        font-family:monospace;
+        font-size:19px;
+    }
+
+    .fa-solid {
+        background-color:silver;
+        padding:10px;
+        border-radius:50%;
+        margin:20px 0 0 0 ;
+    }
+    
+    .box1 {
+        width:45%;
+        margin-top:2rem;
+        margin:auto;
+    }
+
+    input,
+    select,
+    textarea {
+        width:100%;
+    }
+
+    select {
+        width:100%;
+    }
+
+    button {
+        width:7rem;
+        padding:0.9rem;
+        margin-top:1.5rem;
+        padding:1rem;
+    }
 
     footer {
-        position:fixed;
+        position:relative;
         padding:60px;
       }
 
@@ -165,31 +634,6 @@ body {
       .fa-github {
         font-size: 25px;
         cursor: pointer;
-        transition: all 1.5s;
-      }
-
-      .fa-instagram:hover {
-        transition: all 1.5s;
-        background-image: linear-gradient(28deg,
-         rgba(255,152,1,1) 0%,
-          rgba(252,1,114,1) 60%,
-           rgba(212,0,196,1) 100%);
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-      }
-
-      .fa-whatsapp:hover {
-        color:green;
-        transition: all 1.5s;
-      }
-
-      .fa-facebook:hover {
-        transition: all 1.5s;
-        color:#316FF6;
-      }
-
-      .fa-github:hover {
         transition: all 1.5s;
       }
 
@@ -304,8 +748,237 @@ body {
     cursor:pointer;
 }
 
+.about {
+    margin:2rem;
+    text-align:center;
+}
+
+.about h1 {
+    color:whitesmoke;
+    font-family:arial;
+}
+
+.info {
+    text-align:center;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+}
+
+.info-heading {
+    color: #45FB8F;
+    font-family:sans-serif;
+}
+
+.info-heading::before {
+    content:'Hi Am ';
+    color:whitesmoke;
+}
+
+.info-heading::after {
+    content:' Frontend web developer';
+    color:whitesmoke;
+}
+
+.information {
+    font-family:Arial;
+    color:white;
+    margin-top:15px;
+}
+
+.web-dev-heading h2 {
+    background-image:linear-gradient(50deg,
+    #54BDD7 0%,
+    #45FB8F 25%,
+    #54BDD7 50%,
+    #45FB8F 75%,
+    #54BDD7 100%);
+    color:transparent;
+    -webkit-background-clip:text;
+}
+
+.web-dev-text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills {
+    text-align:center;
+}
+
+.skills h1 {
+    color:whitesmoke;
+    font-family:arial;
+}
+
+.web-dev:active {
+    opacity:0.7;
+}
+
+.fa-instagram:hover {
+    transition: all 1.5s;
+    background-image: linear-gradient(28deg,
+    rgba(255,152,1,1) 0%,
+    rgba(252,1,114,1) 60%,
+    rgba(212,0,196,1) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.my_work {
+    color:white;
+    font-family:arial;
+    display:flex;
+    margin:2rem;
+}
+
+.mywork {
+  margin:auto;
+}
+
+.contact-me {
+    display:flex;
+    padding:20px;
+    font-family:sans-serif;
+    color:whitesmoke;
+    margin: 1rem;
+}
+
+.contact-second-section {
+    margin:auto;
+}
+
+form {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    width:80%;
+}
+
+.box {
+    
+}
+
+.box1 {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid whitesmoke;
+    padding:3rem 0 3rem 0;
+}
+
+input,
+select,
+textarea {
+    padding:1rem;
+    border: 1px solid silver;
+    filter: drop-shadow(0 0 0.15rem grey);
+    animation:glow 1.5s ease infinite;
+    overflow: hidden;
+}
+
+@keyframes glow {
+
+    0% {
+        box-shadow:0 0 0.30rem grey;
+    }
+
+    50% {
+        box-shadow:0 0 0.10rem grey;
+    }
+
+    100% {
+        box-shadow:0 0 0.10rem grey;
+    }
+}
+
+button {
+    color:whitesmoke;
+    font-family:monospace;
+    background:linear-gradient(42deg,
+    #45FB8F,
+    #54BDD7);
+    filter: drop-shadow(0 0 0.10rem grey);
+    border:1px solid grey;
+    font-size:16px;
+}
+
+button:hover {
+    opacity:0.9;
+}
+
+button:active {
+    opacity:0.7;
+}
+
+textarea {
+    height:7rem;
+    resize:none;
+    overflow-y:auto;
+}
+
+input[type="text"]:focus {
+    outline:none;
+    border:3px solid #54BDD7;
+}
+
+input[type="email"]:focus {
+    outline:none;
+    border:3px solid #45FB8F;
+}
+
+select:focus {
+    outline:none;
+    border:3px solid #54BDD7;
+}
+
+textarea:focus {
+    outline:none;
+    border:3px solid #45FB8F;
+}
+
+.first-section {
+    display:flex;
+    width:20px;
+    padding:25px;
+}
+
+.second-section {
+    display:flex;
+    flex:2;
+    text-align:center;
+    padding:20px;
+}
+
+.fa-angles-left {
+    zoom: 1.7; 
+    background-image: linear-gradient(28deg,
+         rgba(255,152,1,1) 0%,
+          rgba(252,1,114,1) 60%,
+           rgba(212,0,196,1) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        cursor: pointer;
+}
+
+      .fa-whatsapp:hover {
+        color:green;
+        transition: all 1.5s;
+      }
+
+      .fa-facebook:hover {
+        transition: all 1.5s;
+        color:#316FF6;
+      }
+
+      .fa-github:hover {
+        transition: all 1.5s;
+      }
+
 footer {
-    bottom:0;
     width:100%;
     background-color:#333;
     color: #fff;
